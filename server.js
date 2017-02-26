@@ -21,3 +21,5 @@ app.get('/:date', (req, res) => {
 var listener = app.listen(process.env.PORT || 3000, () => {
 	console.log(`Running at port ${listener.address().port}`);
 });
+
+module.exports = app;
